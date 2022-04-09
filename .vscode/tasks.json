@@ -1,0 +1,127 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Composer Install",
+        "command": "composer",
+        "args": [
+          "install"
+        ],
+        "detail": "composer install",
+        "group": "none",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "PHP Server",
+        "command": "php",
+        "args": [
+          "-S",
+          "localhost:8000"
+        ],
+        "detail": "php -S",
+        "group": "none",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "Artisan Serve",
+        "type": "shell",
+        "command": "php",
+        "detail": "php artisan serve",
+        "group": "none",
+        "args": [
+          "artisan",
+          "serve",
+          "--env=local"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}/"
+        },
+        "runOptions": {
+          "runOn": "folderOpen"
+        },
+        "presentation": {
+          "reveal": "never",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "Artisan Queue",
+        "type": "shell",
+        "command": "php",
+        "detail": "php artisan queue:work",
+        "group": "none",
+        "args": [
+          "artisan",
+          "queue:work"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}/"
+        }
+      },
+      {
+        "label": "NPM Install",
+        "type": "npm",
+        "script": "install",
+        "problemMatcher": [],
+        "detail": "npm install",
+        "group": "none",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "NPM Hot",
+        "type": "npm",
+        "script": "hot",
+        "problemMatcher": [],
+        "detail": "npm run hot",
+        "group": "none",
+        "presentation": {
+          "reveal": "never",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "NPM Watch",
+        "type": "npm",
+        "script": "watch",
+        "problemMatcher": [],
+        "detail": "npm run watch",
+        "group": "none",
+        "runOptions": {
+          "runOn": "folderOpen"
+        },
+        "presentation": {
+          "reveal": "never",
+          "panel": "new"
+        }
+      },
+      {
+        "label": "NPM Dev",
+        "type": "npm",
+        "script": "dev",
+        "problemMatcher": [],
+        "detail": "npm run dev",
+        "group": "none",
+        "presentation": {
+          "reveal": "never",
+          "panel": "new"
+        }
+      }
+    ]
+  }
+  
