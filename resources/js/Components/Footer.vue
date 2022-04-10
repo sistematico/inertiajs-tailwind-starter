@@ -9,8 +9,7 @@ const showMenu = ref(false)
 const date = ref(new Date().getFullYear())
 </script>
 <template>
-  <!-- <footer class="block py-4 pt-12 mt-16 relative"> -->
-  <footer class="fixed w-full bottom-0 block py-4 pt-12 mt-16">
+  <footer class="block py-4 pt-12 mt-16 relative">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4">
